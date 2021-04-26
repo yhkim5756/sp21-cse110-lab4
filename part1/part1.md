@@ -46,6 +46,7 @@ part 1b:
 
 15- === is a strict equality checker. It check equality without conversion whereas == does conversion
 
-17- 
+17- We are calling modifyArray with parameters ([1,2,3], doSomething). [1,2,3] will be used as array, and doSomething will be used as callback for function modifyArray. 
+In modifyArray, it will iterate through the array and call doSomething which returns value * 2, and it will push the returned value to newArr and return. As a result, newArr will be an array with same length as [1,2,3] but doubled, [2,4,6]
 
-19- 
+19- It will print out 1 then 4 since there is no timeout for those. Then it will wait 0 sec and print 3, and it wait 1 second then print 2
